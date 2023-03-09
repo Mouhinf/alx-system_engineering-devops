@@ -1,0 +1,2 @@
+#!/bin/bash
+if [ ! -d /tmp/u ]; then mkdir /tmp/u; fi; for file in [A-Z]*; do mv "$file" /tmp/u/; done

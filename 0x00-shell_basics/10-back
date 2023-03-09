@@ -1,4 +1,2 @@
 #!/bin/bash
-prev_dir=$(cat ~/.prev_dir)
-cd "$prev_dir"
-echo "$prev_dir"
+prev_dir=$(cat ~/.prev_dir) && cd "$prev_dir" && echo "$prev_dir"

@@ -1,0 +1,9 @@
+#!/bin/bash
+for item in $(ls -R1 .); do
+    if [ -d "$item" ] && [ "$item" != "." ] && [ "$item" != ".." ]; then
+        ((count++))
+        echo "$item"
+    fi
+done
+echo "$count"
+

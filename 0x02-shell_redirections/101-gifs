@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -exec basename {} .gif \; | sort -f | uniq
+find . -type f -name "*.gif" -print0 | xargs -0 basename -s .gif | sort -zf | uniq -z | tr '\0' '\n

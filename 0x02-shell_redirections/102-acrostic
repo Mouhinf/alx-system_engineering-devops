@@ -1,7 +1,2 @@
 #!/bin/bash
-while read -r line || [[ -n "$line" ]]; do
-    first_char=${line:0:1}
-    decoded="$decoded$first_char"
-done < "${1:-/dev/stdin}"
-echo "$decoded"
-
+cut -c1 "$1" | tr -d '\n'; echo

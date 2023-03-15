@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -n "$(expr ${WATER// /} + ${STIR// /}) in base bestchol"

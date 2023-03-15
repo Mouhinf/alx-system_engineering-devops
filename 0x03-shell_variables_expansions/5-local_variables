@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(declare -p | cut -d " " -f 3), $(env), $(declare -F | cut -d " " -f 3)"
+echo "BASH=${BASH}, BASHOPTS=${BASHOPTS//:/}"

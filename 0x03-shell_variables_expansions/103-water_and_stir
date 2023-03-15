@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n "$(expr ${WATER// /} + ${STIR// /}) in base bestchol"
+echo -n "$(expr ${WATER// /} + ${STIR// /} | cut -c 1) in base bestchol"

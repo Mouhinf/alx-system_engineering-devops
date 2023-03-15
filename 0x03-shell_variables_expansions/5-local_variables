@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "BASH=${BASH}, BASHOPTS=${BASHOPTS//:/}"
+echo -n "BASH=${BASH}, BASHOPTS="; echo ${BASHOPTS//:/\\:}

@@ -1,2 +1,2 @@
 #!/bin/bash
-awk "BEGIN{print int($POWER/$DIVIDE+0.5)}"
+printf "%.0f\n" "$((POWER / DIVIDE))"

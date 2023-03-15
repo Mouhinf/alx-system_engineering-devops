@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Local variables:"; (set -o posix; set) | grep -E "^[^=]+=" | awk '{print $1}'; echo -e "\nEnvironment variables:"; env | awk -F= '{print $1}'; echo -e "\nFunctions:"; typeset -F | awk '{print $3}'

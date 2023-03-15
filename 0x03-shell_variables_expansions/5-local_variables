@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Local variables:"; (set -o posix; set) | grep -E "^[^=]+=" | awk '{print $1}'; echo -e "\nEnvironment variables:"; env | awk -F= '{print $1}'; echo -e "\nFunctions:"; typeset -F | awk '{print $3}'
+echo "$(declare -p | cut -d " " -f 3), $(env), $(declare -F | cut -d " " -f 3)"
